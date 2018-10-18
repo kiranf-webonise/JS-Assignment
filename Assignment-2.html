@@ -1,35 +1,35 @@
 <html>
-	<head>
-		<title>Calculating User Input Occurences</title>
-			<script>
-				function addition() {
-					 var no1 = document.form1.t1.value;
-					 var no2 = document.form1.t2.value;
-					 var n1=parseInt(no1,10);
-					 var n2=parseInt(no2,10);
-					 var ans= n1 + n2;
-					 alert("Addition of "+n1+" and "+n2+" is: "+ans);
-				}
-				function substraction() {
-					 var no1 = document.form1.t1.value;
-					 var no2 = document.form1.t2.value;
-					 var n1=parseInt(no1,10);
-					 var n2=parseInt(no2,10);
-					 var ans= n1 - n2;
-					 alert("Substraction of "+n1+"  and "+n2+" is: "+ans);
-				}
-		</script>
-	</head>
-	<body>
-		<form name="form1">
-			Enter no1:
-			<input type="text" id="t1">
-			<br><br><br>
-			Enter no1:
-			<input type="text" id="t2">
-			<br><br><br>
-			<input type="submit" onclick="addition()" value="Addition"> &nbsp&nbsp&nbsp&nbsp
-			<input type="submit" onclick="substraction()" value="Substract">
-		</form>
-	</body>
+  <head>
+    <title>Calculating User Input Occurences</title>
+      <script>
+        function addition() {
+           var no1 = document.form1.t1.value;
+           var no2 = document.form1.t2.value;
+           var n1=parseInt(no1,10);
+           var n2=parseInt(no2,10);
+           var ans= n1 + n2;
+           alert("Addition of "+n1+" and "+n2+" is: "+ans);
+        }
+        function substraction() {
+           var no1 = document.form1.t1.value;
+           var no2 = document.form1.t2.value;
+           var n1=parseInt(no1,10);
+           var n2=parseInt(no2,10);
+           var ans= n1 - n2;
+           alert("Substraction of "+n1+"  and "+n2+" is: "+ans);
+        }
+    </script>
+  </head>
+  <body>
+    <form name="form1">
+      Enter no1:
+      <input type="text" id="t1">
+      <br><br><br>
+      Enter no1:
+      <input type="text" id="t2">
+      <br><br><br>
+      <input type="submit" onclick="addition()" value="Addition"> &nbsp&nbsp&nbsp&nbsp
+      <input type="submit" onclick="substraction()" value="Substract">
+    </form>
+  </body>
 </html>
