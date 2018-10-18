@@ -21,7 +21,9 @@
           }
         }
         function showLocal(){
-          document.write("<table border=1 border-collapse=collapse><tr><th>Name</th><th>Email</th><th>Current TimeStamp</th></tr>");
+          var table="<table border=1 border-collapse=collapse><tr><th>Name</th>"+
+            "<th>Email</th><th>Current TimeStamp</th></tr>";
+          document.write(table);
           var data = localStorage.getItem("UserDetails").split(',');
           for(let i=0;i<data.length;i++) {
             document.write("<tr><td>"+data[i]+"</td><td>"+data[++i]+"</td><td>"+data[++i]+"</td></tr>");
