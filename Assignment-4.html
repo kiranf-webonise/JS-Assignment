@@ -15,7 +15,7 @@
 					var time = new Date().getTime();
 					var username = document.getElementById("username").value;
 					var email = document.getElementById("email").value;
-					if(validate(email,username)) {	
+					if(validate(email,username)) {
 						user.push(username,email,time);
 						localStorage.setItem("UserDetails",JSON.stringify(user));
 					}
@@ -46,13 +46,13 @@
 				<td><input type=text id="username"></td>
 			</tr>
 			<tr>
-				<td>Enter Email:</td>	
+				<td>Enter Email:</td>
 				<td><input type=Email id="email"></td>
 			</tr>
-			<tr>	
+			<tr>
 				<td><button onclick="addLocal()">Add</button></td>
 				<td><button onclick="showLocal()">Show</button></td>
 			</tr>
 		</table>
-	</body>	
+	</body>
 </html>
