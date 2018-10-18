@@ -21,18 +21,10 @@
           }
         }
         function showLocal(){
-          document.write("<table border=1 border-collapse=collapse>");
-          document.write("<tr>");
-          document.write("<th>Name</th>");
-          document.write("<th>Email</th>");
-          document.write("<th>Current TimeStamp</th>");
-          document.write("</tr>");
+          document.write("<table border=1 border-collapse=collapse><tr><th>Name</th><th>Email</th><th>Current TimeStamp</th></tr>");
           var data = localStorage.getItem("UserDetails").split(',');
           for(let i=0;i<data.length;i++) {
-            document.write("<tr>");
-            document.write("<td>"+data[i]+"</td>");
-            document.write("<td>"+data[++i]+"</td>");
-            document.write("<td>"+data[++i]+"</td>");
+            document.write("<tr><td>"+data[i]+"</td><td>"+data[++i]+"</td><td>"+data[++i]+"</td></tr>");
             document.write("</tr>");
           }
           document.write("</table>");
